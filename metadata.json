@@ -1,13 +1,13 @@
 {
-  "name": "Map Tiles",
+  "name": "Map Tiles highres",
   "version": "1.1.0",
   "description": "",
   "attribution": "Rendered with <a href=\"https://www.maptiler.com/\">MapTiler</a>",
   "type": "overlay",
   "format": "png",
   "minzoom": "12",
-  "maxzoom": "16",
-  "scale": "1.000000",
-  "bounds": [9.86338553, 56.00302384, 9.94800226, 56.03960906],
+  "maxzoom": "17",
+  "scale": "2.000000",
+  "bounds": [9.86351203, 56.00325001, 9.94797631, 56.03946467],
   "profile": "mercator"
 }
