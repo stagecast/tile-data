@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Map Tiles highres</title>
+<title>Map Overlay highres</title>
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -21,13 +21,13 @@ body { width:100%; height:100%; background: #ffffff; }
 <script type="text/javascript">
 var mapExtent = ol.proj.transformExtent([9.863512, 56.003250, 9.947976, 56.039465], 'EPSG:4326', 'EPSG:3857');
 var mapMinZoom = 12;
-var mapMaxZoom = 17;
+var mapMaxZoom = 18;
 var layer = new ol.layer.Tile({
   extent: mapExtent,
   source: new ol.source.XYZ({
-    attributions: [new ol.Attribution({html: 'Map Tiles highres; Rendered with <a href="https://www.maptiler.com/">MapTiler</a>'})],
+    attributions: [new ol.Attribution({html: 'Map Overlay highres; Rendered with <a href="https://www.maptiler.com/">MapTiler</a>'})],
     url: "{z}/{x}/{y}.png",
-    tilePixelRatio: 2.000000,
+    tilePixelRatio: 1.000000,
     minZoom: mapMinZoom,
     maxZoom: mapMaxZoom
   })

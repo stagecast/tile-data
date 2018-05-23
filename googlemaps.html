@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Map Tiles highres</title>
+<title>Map Overlay highres</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <style type="text/css">
 html { overflow: hidden; }
@@ -35,7 +35,7 @@ var mapBounds = new google.maps.LatLngBounds(
     new google.maps.LatLng(56.003250, 9.863512),
     new google.maps.LatLng(56.039465, 9.947976));
 var mapMinZoom = 12;
-var mapMaxZoom = 17;
+var mapMaxZoom = 18;
 var maptiler = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) { 
         var proj = map.getProjection();
