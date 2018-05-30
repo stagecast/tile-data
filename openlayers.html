@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Map Overlay highres</title>
+<title>Map Overlay highres 12-21</title>
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,13 +19,13 @@ body { width:100%; height:100%; background: #ffffff; }
 <div id="map"></div>
 <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
 <script type="text/javascript">
-var mapExtent = ol.proj.transformExtent([9.863512, 56.003250, 9.947976, 56.039465], 'EPSG:4326', 'EPSG:3857');
+var mapExtent = ol.proj.transformExtent([9.853005, 56.002003, 9.962473, 56.040211], 'EPSG:4326', 'EPSG:3857');
 var mapMinZoom = 12;
-var mapMaxZoom = 18;
+var mapMaxZoom = 21;
 var layer = new ol.layer.Tile({
   extent: mapExtent,
   source: new ol.source.XYZ({
-    attributions: [new ol.Attribution({html: 'Map Overlay highres; Rendered with <a href="https://www.maptiler.com/">MapTiler</a>'})],
+    attributions: [new ol.Attribution({html: 'Map Overlay highres 12-21; Rendered with <a href="https://www.maptiler.com/">MapTiler</a>'})],
     url: "{z}/{x}/{y}.png",
     tilePixelRatio: 1.000000,
     minZoom: mapMinZoom,
@@ -43,8 +43,8 @@ var map = new ol.Map({
     layer
   ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([9.905744, 56.021357]),
-    zoom: 13
+    center: ol.proj.fromLonLat([9.907739, 56.021107]),
+    zoom: 12
   })
 });
 </script>

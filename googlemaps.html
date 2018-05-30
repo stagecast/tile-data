@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Map Overlay highres</title>
+<title>Map Overlay highres 12-21</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <style type="text/css">
 html { overflow: hidden; }
@@ -32,10 +32,10 @@ body { background: #f4f4f4;}
 <script type="text/javascript">
 var map;
 var mapBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(56.003250, 9.863512),
-    new google.maps.LatLng(56.039465, 9.947976));
+    new google.maps.LatLng(56.002003, 9.853005),
+    new google.maps.LatLng(56.040211, 9.962473));
 var mapMinZoom = 12;
-var mapMaxZoom = 18;
+var mapMaxZoom = 21;
 var maptiler = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) { 
         var proj = map.getProjection();
@@ -64,7 +64,7 @@ function init() {
     var opts = {
         tilt:0,
         streetViewControl: false,
-        center: new google.maps.LatLng(56.021357, 9.905744),
+        center: new google.maps.LatLng(56.021107, 9.907739),
         zoom: 12
     };
     map = new google.maps.Map(document.getElementById("map"), opts);
