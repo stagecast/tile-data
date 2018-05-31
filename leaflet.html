@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Map Overlay highres 12-21</title>
+    <title>Maptiles highres 12-19</title>
     <meta http-equiv="imagetoolbar" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,9 +19,9 @@
   <div id="map"></div>
   <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
   <script type="text/javascript">
-    var mapExtent = [9.85300477, 56.00200303, 9.96247290, 56.04021147];
+    var mapExtent = [9.86360311, 56.00328793, 9.94781564, 56.03943512];
     var mapMinZoom = 12;
-    var mapMaxZoom = 21;
+    var mapMaxZoom = 19;
     var bounds = new L.LatLngBounds(
       new L.LatLng(mapExtent[1], mapExtent[0]),
       new L.LatLng(mapExtent[3], mapExtent[2]));
