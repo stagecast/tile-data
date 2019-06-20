@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>maptiler 2019</title>
+<title>Smukfest Maptiler</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <style type="text/css">
 html { overflow: hidden; }
@@ -32,8 +32,8 @@ body { background: #f4f4f4;}
 <script type="text/javascript">
 var map;
 var mapBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(56.000730, 9.864216),
-    new google.maps.LatLng(56.042399, 9.938986));
+    new google.maps.LatLng(56.000026, 9.853545),
+    new google.maps.LatLng(56.039898, 9.962162));
 var mapMinZoom = 12;
 var mapMaxZoom = 19;
 var maptiler = new google.maps.ImageMapType({
@@ -64,7 +64,7 @@ function init() {
     var opts = {
         tilt:0,
         streetViewControl: false,
-        center: new google.maps.LatLng(56.021565, 9.901601),
+        center: new google.maps.LatLng(56.019962, 9.907854),
         zoom: 12
     };
     map = new google.maps.Map(document.getElementById("map"), opts);

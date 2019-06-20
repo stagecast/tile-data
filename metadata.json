@@ -1,5 +1,5 @@
 {
-  "name": "maptiler 2019",
+  "name": "Smukfest Maptiler",
   "version": "1.1.0",
   "description": "",
   "attribution": "Rendered with <a href=\"https://www.maptiler.com/\">MapTiler</a>",
@@ -7,7 +7,7 @@
   "format": "png",
   "minzoom": "12",
   "maxzoom": "19",
-  "scale": "1.000000",
-  "bounds": [9.86421582, 56.00072996, 9.93898590, 56.04239904],
+  "scale": "2.000000",
+  "bounds": [9.85354510, 56.00002617, 9.96216247, 56.03989772],
   "profile": "mercator"
 }

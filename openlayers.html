@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>maptiler 2019</title>
+<title>Smukfest Maptiler</title>
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,15 +19,15 @@ body { width:100%; height:100%; background: #ffffff; }
 <div id="map"></div>
 <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
 <script type="text/javascript">
-var mapExtent = ol.proj.transformExtent([9.864216, 56.000730, 9.938986, 56.042399], 'EPSG:4326', 'EPSG:3857');
+var mapExtent = ol.proj.transformExtent([9.853545, 56.000026, 9.962162, 56.039898], 'EPSG:4326', 'EPSG:3857');
 var mapMinZoom = 12;
 var mapMaxZoom = 19;
 var layer = new ol.layer.Tile({
   extent: mapExtent,
   source: new ol.source.XYZ({
-    attributions: [new ol.Attribution({html: 'maptiler 2019; Rendered with <a href="https://www.maptiler.com/">MapTiler</a>'})],
+    attributions: [new ol.Attribution({html: 'Smukfest Maptiler; Rendered with <a href="https://www.maptiler.com/">MapTiler</a>'})],
     url: "{z}/{x}/{y}.png",
-    tilePixelRatio: 1.000000,
+    tilePixelRatio: 2.000000,
     minZoom: mapMinZoom,
     maxZoom: mapMaxZoom
   })
@@ -43,8 +43,8 @@ var map = new ol.Map({
     layer
   ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([9.901601, 56.021565]),
-    zoom: 13
+    center: ol.proj.fromLonLat([9.907854, 56.019962]),
+    zoom: 12
   })
 });
 </script>
